@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html {
+  background-color: rgb(27, 26, 26);
+}
+
+nav, header, section {
+  background-color: rgb(27, 26, 26);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*NAVBAR*/
+nav {
+  background-color: rgb(27, 26, 26);
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a img {
+  height: 50px;
+  width: auto;
+}
+
+nav ul {
+  align-self: flex-end;
+}
+
+nav ul li {
+  display: block;
+  text-align: right;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  color: white;
+}
+
+a:hover {
+  color: rgb(245, 245, 140);
+}
+
+.mensaje {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/*CAROUSEL*/
+.carousel {
+  height: 600px;
+  width: auto;
+}
+.carousel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+}
+
+.carousel-item .caroBig {
+  height: 600px;
+  width: auto;
+}
+
+#carouselIntro {
+  transition: ease 0.5s;
+}
+
+.carouselGrid {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-areas: "cocina carousel1" "placard carousel2" "demas carousel3";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr;
+}
+.carouselGrid a {
+  -webkit-text-decoration: underline solid rgb(245, 245, 140);
+          text-decoration: underline solid rgb(245, 245, 140);
+  color: rgb(245, 245, 140);
+}
+.carouselGrid #carousel1 {
+  grid-area: carousel1;
+  width: 300px;
+  height: 200px;
+  border: solid black;
+}
+.carouselGrid #carousel1 div div div img {
+  width: auto;
+  height: 200px;
+  width: 300px;
+}
+.carouselGrid #carousel2 {
+  grid-area: carousel2;
+  width: 300px;
+  height: 200px;
+  border: solid black;
+}
+.carouselGrid #carousel2 div div div img {
+  width: auto;
+  height: 200px;
+  width: 300px;
+}
+.carouselGrid #carousel3 {
+  grid-area: carousel3;
+  width: 300px;
+  height: 200px;
+  border: solid black;
+}
+.carouselGrid #carousel3 div div div img {
+  width: auto;
+  height: 200px;
+  width: 300px;
+}
+.carouselGrid .cocina {
+  grid-area: cocina;
+}
+.carouselGrid .placard {
+  grid-area: placard;
+}
+.carouselGrid .demas {
+  grid-area: demas;
+}
+
+/*FOOTER*/
+footer {
+  background-color: rgb(27, 26, 26);
+  color: white;
+}
+
+h4 {
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+}
+
+.somos {
+  background-color: rgb(27, 26, 26);
+  color: white;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.mensaje2 {
+  padding: 0% 30% 0% 30%;
+  margin: 0;
+  text-align: justify;
+}
+
+footer .redes {
+  text-align: center;
+}
+footer .redes button {
+  background-color: transparent;
+  border: none;
+}
+footer .redes button a:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 0.2;
+}
+footer .redes button img {
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 20px 20px 20px;
+  background-color: rgb(245, 245, 140);
+  border-radius: 50px;
+}
+
+.footerContacto, .divContacto {
+  background-color: rgb(27, 26, 26);
+}
+
+.sumuebles {
+  display: flex;
+  justify-content: center;
+}
+.sumuebles img {
+  height: 5rem;
+  width: auto;
+}
+
+.divContacto ul li {
+  list-style: none;
+  text-align: center;
+}
+.divContacto ul li h6 {
+  display: inline-block;
+  padding: 10px 20px 0px 20px;
+  list-style: none;
+}
+
+.copyright {
+  text-align: center;
+  font-size: small;
+}
+
+/*SECCIONES*/
+section {
+  padding-top: 5rem;
+  background-color: rgb(15, 15, 15);
+}
+section .seccion {
+  text-align: center;
+  color: rgb(245, 245, 140);
+  margin-bottom: 0;
+}
+
+.seccionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  background-color: rgb(15, 15, 15);
+  padding-top: 4rem;
+}
+.seccionGrid a {
+  margin: 0;
+  padding: 0;
+}
+.seccionGrid img {
+  height: 200px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  margin: 0px 10px 30px 10px;
+}
+
+.seccionGrid img:hover {
+  transform: scale(1.2);
+  transition-property: all;
+  transition-duration: 2s;
+  transition-delay: 0.2s;
+}
+
+.btn-primary {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.btn-primary:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+#offcanvasExample {
+  background-color: rgb(245, 245, 140);
+}
+
+.offcanvas {
+  width: 80%;
+}
+.offcanvas .offcanvas-body {
+  align-self: center;
+  overflow: hidden;
+}
+.offcanvas .offcanvas-body img {
+  width: 400px;
+  height: 400px;
+  margin: 3rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr;
+  grid-template-areas: "mensaje formulario";
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+.formGrid .formMensaje {
+  color: rgb(245, 245, 140);
+  margin-bottom: 0;
+  background-color: rgb(27, 26, 26);
+  font-size: larger;
+  margin: 0% 0% 0% 40%;
+  grid-area: mensaje;
+}
+.formGrid .formMensaje p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.formGrid .formContacto {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.formGrid .formContacto button {
+  border-radius: 30px;
+  margin: 0rem 0rem 0rem 6rem;
+  background-color: rgb(245, 245, 140);
+}
+.formGrid .formContacto button img {
+  width: 50px;
+  height: 40px;
+  background-color: rgb(245, 245, 140);
+  border-radius: 30px;
+}
+.formGrid .formContacto button:hover {
+  opacity: 0.2;
+}
+
+.formularioContacto {
+  display: grid;
+  margin: 0% 40% 0% 0%;
+  grid-area: formulario;
+}
+
+.formType {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  background-color: rgb(245, 245, 140);
+  border: 1px solid black;
+  color: black;
+}
+
+.formEnviar {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  background-color: darkgoldenrod;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
