@@ -12,7 +12,7 @@ nav, header, section{
 
 a{
     text-decoration: none;
-    color: white;
+    color: #e7551b;
 }
 /*NAVBAR*/
 nav{
@@ -46,7 +46,7 @@ nav ul li a{
     list-style: none;
     padding-left: 3rem;
     padding-right: 2rem;
-    color: white;
+    color: #e7551b;
 }
 a:hover {
     color: rgb(245, 245, 140);
@@ -126,7 +126,7 @@ h4{
 
 .somos{
     background-color: rgb(27, 26, 26);
-    color: white;
+    color: #e7551b;
     text-align: center;
     padding-bottom: 2rem;
 }

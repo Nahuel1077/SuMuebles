@@ -14,11 +14,15 @@ nav, header, section {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #e7551b;
 }
 
 ul {
   padding: 0;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 /*NAVBAR*/
@@ -35,7 +39,7 @@ nav {
 
 button.navbar-toggler {
   border-radius: 10px;
-  background-color: white;
+ 
   visibility: hidden;
 }
 button.navbar-toggler span.navbar-toggler-icon {
@@ -55,10 +59,11 @@ nav a img {
   list-style: none;
   padding-left: 3rem;
   padding-right: 2rem;
-  color: white;
+  color: #e7551b;
+  font-family: serif
 }
 .nav-link:hover {
-  color: rgb(245, 245, 140);
+  color: white;
 }
 
 .navbar-nav {
@@ -69,9 +74,80 @@ nav a img {
 
 .mensaje {
   background-color: rgb(15, 15, 15);
-  color: white;
-  padding-top: 3rem;
+  color: #e7551b;
+  padding-top: 6rem;
   padding-bottom: 3rem;
+  font-family: serif;
+  display: flex;
+  align-items: center;
+}
+/* BANNER */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img.bannerCocinasImg {
+  width: 100%;
+  position: relative;
+}
+img.bannerPlacaresImg {
+  width: 100%;
+  position: relative;
+}
+img.bannerEspecialesImg {
+  width: 100%;
+  position: relative;
+}
+
+.bannerLinks{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.textOverImageCocinas {
+  position: absolute;
+  z-index: 1;
+  font-size: xx-large;
+  font-family: serif;
+  color: white;
+  padding-left: 15%;
+  padding-top: 15%;
+}
+.textOverImagePlacares {
+  position: absolute;
+  z-index: 1;
+  font-size: xx-large;
+  font-family: serif;
+  color: white;
+  padding-left: 15%;
+  padding-top: 25%;
+}
+.textOverImageEspeciales {
+  position: absolute;
+  z-index: 1;
+  font-size: xx-large;
+  font-family: serif;
+  color: white;
+  padding-left: 15%;
+  padding-top: 15%;
+}
+.textOverImageCocinas:hover{
+  transform: scale3d(1.2, 1.2, 1.2);
+  transition: ease;
+  transition-duration: 1.5s;
+}
+.textOverImagePlacares:hover{
+  transform: scale3d(1.2, 1.2, 1.2);
+  transition: ease;
+  transition-duration: 1.5s;
+}
+.textOverImageEspeciales:hover{
+  transform: scale3d(1.2, 1.2, 1.2);
+  transition: ease;
+  transition-duration: 1.5s;
 }
 
 /*CAROUSEL*/
@@ -85,6 +161,9 @@ nav a img {
   height: 200px;
 }
 
+.carousel-item{
+  transition: transform .6s ease-in-out !important;
+}
 .carousel-item .caroBig {
   height: 600px;
   width: auto;
@@ -99,18 +178,27 @@ nav a img {
   display: grid;
   grid-template-areas: "cocina carousel1" "placard carousel2" "demas carousel3";
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-rows: 2.5fr 2.5fr 2fr;
 }
 .carouselGrid a {
-  -webkit-text-decoration: underline solid rgb(245, 245, 140);
-          text-decoration: underline solid rgb(245, 245, 140);
-  color: rgb(245, 245, 140);
+  color: #e7551b;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: serif
 }
+
+.carouselGrid a:hover {
+  color: white;
+  opacity: 0.5;
+  transition-duration: 1s;
+}
+
 .carouselGrid #carousel1 {
   grid-area: carousel1;
   width: 300px;
   height: 200px;
-  border: solid black;
 }
 .carouselGrid #carousel1 div div div img {
   width: auto;
@@ -121,7 +209,6 @@ nav a img {
   grid-area: carousel2;
   width: 300px;
   height: 200px;
-  border: solid black;
 }
 .carouselGrid #carousel2 div div div img {
   width: auto;
@@ -132,7 +219,6 @@ nav a img {
   grid-area: carousel3;
   width: 300px;
   height: 200px;
-  border: solid black;
 }
 .carouselGrid #carousel3 div div div img {
   width: auto;
@@ -152,7 +238,8 @@ nav a img {
 /*FOOTER*/
 footer {
   background-color: rgb(27, 26, 26);
-  color: white;
+  color: #e7551b;
+  padding-top: 3%;
 }
 
 h4 {
@@ -163,7 +250,7 @@ h4 {
 
 .somos {
   background-color: rgb(27, 26, 26);
-  color: white;
+  color: #e7551b;
   text-align: center;
   padding-bottom: 2rem;
 }
@@ -172,6 +259,7 @@ h4 {
   padding: 0% 30% 0% 30%;
   margin: 0;
   text-align: justify;
+  font-family: serif
 }
 
 footer .redes {
@@ -184,14 +272,16 @@ footer .redes button {
 footer .redes button a:hover {
   text-decoration: none;
   color: white;
-  opacity: 0.2;
+  opacity: 0.5;
+  transition-duration: 0.5s;
 }
 footer .redes button img {
-  height: 40px;
+  height: 45px;
   padding: 10px 10px 10px 10px;
-  margin: 10px 20px 20px 20px;
-  background-color: rgb(245, 245, 140);
+  margin: 0px 20px 20px 20px;
+  background-color: #e7551b;
   border-radius: 50px;
+  width: 55%;
 }
 
 .footerContacto, .divContacto {
@@ -200,11 +290,22 @@ footer .redes button img {
 
 .sumuebles {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sumuebles img:hover{
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
+
+.textoShop a:hover{
+  color: white;
 }
 .sumuebles img {
   height: 5rem;
   width: auto;
+  margin-top: 5%;
 }
 
 .divContacto ul li {
@@ -222,16 +323,41 @@ footer .redes button img {
   font-size: small;
 }
 
+.mailIndex:hover{
+  color:white;
+  transition-duration: 1s;
+}
+
 /*SECCIONES*/
 section {
   padding-top: 5rem;
   background-color: rgb(15, 15, 15);
+  font-family: serif;
+  text-align: -webkit-center;
 }
 section .seccion {
   text-align: center;
-  color: rgb(245, 245, 140);
-  margin-bottom: 0;
+  color: #e7551b;
+  margin-bottom: 0;    
+  font-family: serif
 }
+
+h1{
+  font-family: serif
+}
+
+h2{
+  font-family: serif
+}
+
+h5{
+  font-family: serif
+}
+
+h6{
+  font-family: serif
+}
+
 
 .seccionGrid {
   display: grid;
@@ -290,12 +416,12 @@ section .seccion {
 }
 
 .fondoNegroContacto {
-  padding: 2% 0% 5% 0%;
-}
-
-.fondoContacto {
-  background-image: url("../img/cocina5.jpeg");
-  margin: 0% 13% 0% 13%;
+  background-image: url(../img/cocina25.jpeg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  background-repeat: round;
 }
 
 .formGrid {
@@ -306,48 +432,43 @@ section .seccion {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.formGrid .formMensaje {
-  color: rgb(245, 245, 140);
-  margin-bottom: 0;
-  background-color: rgb(27, 26, 26);
-  font-size: larger;
-  margin: 0% 0% 0% 40%;
-  grid-area: mensaje;
-  opacity: 0.8;
-}
-.formGrid .formMensaje p {
-  font-family: Arial, Helvetica, sans-serif;
-}
-.formGrid .formContacto {
+
+.formContacto {
   width: 60px;
   height: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: row;
+  margin: 2% 0% 2% 0%;
 }
-.formGrid .formContacto button {
-  border-radius: 30px;
-  background-color: rgb(245, 245, 140);
+.formContacto button {
+  border-radius: 100px;
+  background-color: orangered;
 }
-.formGrid .formContacto button img {
-  width: 50px;
+.formContacto button img {
+  width: 55px;
   height: 40px;
-  background-color: rgb(245, 245, 140);
-  border-radius: 30px;
+  background-color: orangered;
+  border-radius: 100px;
 }
-.formGrid .formContacto button:hover {
-  opacity: 0.2;
+.formContacto button:hover {
+  opacity: 0.5;
+  transition-duration: 0.5s;
 }
 
 .formularioContacto {
-  display: grid;
-  margin: 0% 40% 0% 0%;
+  display: flex;
   grid-area: formulario;
+  flex-direction: column;
+  align-items: stretch;
+  padding-top: 5%;
+  width: 60%;
 }
 
 .formType {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: large;
-  background-color: rgb(245, 245, 140);
+  background-color: white;
   border: 1px solid black;
   color: black;
   opacity: 0.7;
@@ -357,8 +478,11 @@ section .seccion {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: large;
   font-weight: bold;
-  background: linear-gradient(0deg, black, #303030);
-  color: #c5a045;
+  background: linear-gradient(0deg, black, orangered);
+  color: white;
+}
+.formEnviar:hover{
+  opacity: 0.7;
 }
 
 .nav-item {
@@ -393,15 +517,23 @@ section .seccion {
     justify-content: space-between;
     margin-top: 6rem !important;
   }
-  .formType {
-    height: 30px;
-    width: 150px;
+  .formularioContacto {
+    width: 100%;
   }
   #mensaje {
     height: 150px;
   }
+  .mensaje{
+    flex-wrap: wrap !important;
+    padding-top: 30% !important;
+  }
+  
 }
 @media (max-width: 450px) {
+  .seccionGrid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
   .carouselGrid {
     padding-top: 3rem;
     display: grid;
@@ -411,6 +543,7 @@ section .seccion {
   }
   .carouselGrid a {
     text-align: center;
+    padding-top: 10%;
   }
   #carousel1, #carousel2, #carousel3 {
     justify-self: center;
@@ -436,24 +569,19 @@ section .seccion {
   }
   .formContacto {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-top: 6rem !important;
-    width: auto !important;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 0% 5% 0%;
   }
-  .formType {
-    height: 30px;
-    width: 150px;
+  .formularioContacto{
+    width: 100%;
   }
   #mensaje {
     height: 150px;
   }
-  .formularioContacto {
-    margin: 0% 20% 0% 0%;
-  }
-  input.formEnviar {
-    width: 150px;
+  .mensaje{
+    flex-wrap: wrap !important;
+    padding-top: 30% !important;
   }
   .fondoContacto {
     background-image: url("../img/cocina5 - copia (2).jpeg");
@@ -471,26 +599,16 @@ section .seccion {
   .formMensaje p {
     display: none;
   }
-  .formContacto {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-top: 6rem !important;
-    width: auto !important;
-  }
   .formType {
-    height: 30px;
-    width: 150px;
+    height: auto;
+    width: 100%;
   }
   #mensaje {
     height: 150px;
   }
-  .formularioContacto {
-    margin: 0% 20% 0% 0%;
-  }
-  input.formEnviar {
-    width: 150px;
+  .mensaje{
+    flex-wrap: wrap !important;
+    padding-top: 30% !important;
   }
 }
 @media (min-width: 651px) and (max-width: 970px) {
@@ -513,9 +631,10 @@ section .seccion {
     margin: 0% 0% 0% 20% !important;
   }
   .formContacto {
-    margin-top: 0 !important;
-    flex-direction: row !important;
-    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 0% 5% 0%;
   }
 }
 @media (max-width: 970px) {
@@ -543,4 +662,75 @@ section .seccion {
   .navbar-toggler {
     grid-area: toggler;
   }
-}/*# sourceMappingURL=styles.css.map */
+  .carouselGrid{
+    font-size: xxx-large;
+  }
+}
+@media (min-width: 971px) {
+.mensaje{
+  padding: 10% 25%;
+  flex-wrap: nowrap;
+}
+.carouselGrid{
+  font-size: xxx-large;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.bannerCocinas{
+  width: 70%;
+}
+.bannerGrupo{
+  width: 30%;
+}
+.bannerCocinasImg{
+  height: 400px;
+  object-fit: cover;
+}
+
+.bannerPlacaresImg{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bannerEspecialesImg{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.textOverImageCocinas{
+  position: absolute;
+  z-index: 1;
+  font-size: xx-large;
+  font-family: serif;
+  color: white;
+  padding-left: 15%;
+  padding-top: 15%;
+}
+
+.textOverImagePlacares {
+  position: absolute;
+  z-index: 1;
+  font-size: xx-large;
+  font-family: serif;
+  color: white;
+  padding-left: 5%;
+  padding-top: 0;
+}
+
+.textOverImageEspeciales {
+  position: absolute;
+  z-index: 1;
+  font-size: xx-large;
+  font-family: serif;
+  color: white;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+}
+/*# sourceMappingURL=styles.css.map */
