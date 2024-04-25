@@ -732,5 +732,8 @@ h6{
   padding-left: 5%;
   padding-top: 3%;
 }
+.collapse:not(.show) {
+  display: block;
+}
 }
 /*# sourceMappingURL=styles.css.map */
