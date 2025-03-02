@@ -37,7 +37,6 @@ export default function ImageGallery() {
     "/cocina24.jpeg",
     "/cocina25.jpeg",
     "/cocina26.jpeg",
-    "/cocina27.jpeg",
     "/cocina28.jpeg",
     "/cocina29.jpeg",
     "/cocina30.jpeg",

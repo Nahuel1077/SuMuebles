@@ -23,13 +23,13 @@ export default function Home() {
           <a href="mailto:sumueblesshop@hotmail.com?subject=Presupuesto&body=Hola, me contacto luego de ver su página sumuebles.com. Me gustaría solicitar un presupuesto para muebles de cocina/placard/muebles de baño. Saludos." className="bg-[#c3a269c4] rounded-3xl shadow-black shadow-md w-full text-center content-center h-10 lg:h-[70px] border border-black hover:scale-75 transition-transform">Solicitar presupuesto</a>
         </div>
       </div>
-      <h1 className={`${tinos.className} text-6xl max-xl:text-2xl text-center pt-8`}>LOS DETALLES SÍ MARCAN LA DIFERENCIA</h1>
+      <h1 className={`${tinos.className} text-6xl max-xl:text-2xl text-center sm:pt-8`}>LOS DETALLES SÍ MARCAN LA DIFERENCIA</h1>
       <main className="flex flex-col gap-8 items-center">
         <div className="flex flex-row gap-3 max-sm:flex-col">
           <Link 
             className="flex flex-col items-center justify-center" href="/cocinas">
             <Image
-              className="object-cover hover:opacity-50 ease-linear duration-150 w-72 sm:w-full sm:h-full"
+              className="object-cover opacity-50 sm:opacity-100 sm:hover:opacity-50 ease-linear duration-150 w-screen sm:w-full sm:h-full rounded-3xl sm:rounded-[20px_0px_0px_20px]"
               src="/cocina19.jpeg"
               alt="Sumuebles logo"
               width={700}
@@ -40,7 +40,7 @@ export default function Home() {
           </Link>
           <Link className="flex flex-col items-center justify-center" href="/placares">  
             <Image
-              className="object-cover hover:opacity-50 ease-linear duration-150 w-72 sm:w-full"
+              className="object-cover opacity-50 sm:opacity-100 sm:hover:opacity-50 ease-linear duration-150 w-screen sm:w-full rounded-3xl sm:rounded-[0px_20px_20px_0px]"
               src="/placard2.jpeg"
               alt="Sumuebles logo"
               width={300}
@@ -50,7 +50,7 @@ export default function Home() {
             <h4 className= {`${tinos.className} absolute -z-10 font-semibold text-3xl`}>Placares</h4>
           </Link>
         </div>
-        <div className="flex flex-col m-4 sm:flex-row bg-[#c3a269c4] rounded-2xl h-full sm:h-[400px] items-center bg-[url(/cocina5.jpeg)] bg-[10%_95%] bg-blend-luminosity bg-cover sm:max-w-[1146px]">
+        <div className="flex flex-col m-4 sm:flex-row bg-[#c3a269c4] rounded-2xl h-full sm:h-[400px] items-center bg-[url(/cocina5.jpeg)] bg-[10%_95%] bg-blend-darken bg-cover sm:max-w-[1146px]">
           <div className="content-center sm:w-1/2 flex justify-center">
             <h2 className={`${tinos.className} text-2xl`}>Quiénes somos:</h2>
           </div>
