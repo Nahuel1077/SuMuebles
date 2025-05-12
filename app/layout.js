@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="flex flex-row flex-wrap justify-between sm:justify-between px-4 items-center sticky top-0 bg-black z-10">
+        <nav className="flex flex-row flex-wrap justify-between sm:justify-between px-4 items-center sticky top-0 bg-black z-10 drop-shadow-[2px_4px_6px_black]">
         <Link className="logo min-w-12 min-h-12" href="/">
         <Image
           className="object-cover hover:opacity-50 ease-linear duration-150"
@@ -115,8 +115,6 @@ export default function RootLayout({ children }) {
           <Link
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="/contacto"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Contacto
           </Link>
@@ -171,8 +169,8 @@ export default function RootLayout({ children }) {
             Email
           </a>
           </footer>
-          <div className="z-20 hidden sm:block hover:opacity-60">
-            <a href="https://www.sumueblesshop.com/" className="fixed top-[85%] left-[75%] xl:left-[80%] 2xl:left-[85%] flex flex-col items-center">
+          <div className="z-50 hidden sm:block hover:opacity-60">
+            <a href="https://www.sumueblesshop.com/" className="fixed top-[85%] left-[75%] xl:left-[80%] 2xl:left-[85%] flex flex-col items-center z-50">
               <Image
                 src="/logo.png"
                 alt="logo"

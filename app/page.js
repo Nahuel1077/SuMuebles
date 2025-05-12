@@ -9,8 +9,8 @@ const tinos = Tinos({
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-items-center sm:p-8 gap-16 sm:px-20 sm:py-12">
-      <div className="flex flex-col items-center justify-items-center max-w-[1000px] w-full bg-[#ff5e0073] rounded-3xl transition-all sm:hover:bg-[#ff5e0000]">
+    <div className="flex flex-col items-center justify-items-center gap-16 sm:px-20">
+      {/* <div className="flex flex-col items-center justify-items-center max-w-[1000px] w-full bg-[#ff5e0073] rounded-3xl transition-all sm:hover:bg-[#ff5e0000]">
         <Image
           className="object-scale-down -z-10 rounded-3xl sm-w-screen sm-h-[400px] "
           src="/cocina25.jpeg"
@@ -22,7 +22,16 @@ export default function Home() {
           <h3>Tus muebles ideales a medida</h3>
           <a href="mailto:sumueblesshop@hotmail.com?subject=Presupuesto&body=Hola, me contacto luego de ver su página sumuebles.com. Me gustaría solicitar un presupuesto para muebles de cocina/placard/muebles de baño. Saludos." className="bg-[#c3a269c4] rounded-3xl shadow-black shadow-md w-full text-center content-center h-10 lg:h-[70px] border border-black hover:scale-75 transition-transform">Solicitar presupuesto</a>
         </div>
+      </div> */}
+
+    {/* PRUEBA */}
+        <div className={`${tinos.className} relative top-[15%] sm:top-[22%] gap-12 flex flex-col items-center text-xl lg:text-5xl lg:gap-60`}>
+          <h3 className="absolute top-[20%] z-[1]">Tus muebles ideales a medida</h3>
+          <a href="mailto:sumueblesshop@hotmail.com?subject=Presupuesto&body=Hola, me contacto luego de ver su página sumuebles.com. Me gustaría solicitar un presupuesto para muebles de cocina/placard/muebles de baño. Saludos." className="bg-[#c3a269c4] rounded-3xl shadow-black shadow-md absolute top-[70%] text-center content-center h-10 lg:h-[70px] border border-black hover:scale-75 transition-transform z-[1] w-[80%] lg:w-[45%]">Solicitar presupuesto</a>
+        <div id="mask" className="md:bg-cover bg-contain">
+        </div>
       </div>
+
       <h1 className={`${tinos.className} text-6xl max-xl:text-2xl text-center sm:pt-8`}>LOS DETALLES SÍ MARCAN LA DIFERENCIA</h1>
       <main className="flex flex-col gap-8 items-center">
         <div className="flex flex-row gap-3 max-sm:flex-col">
